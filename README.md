@@ -77,3 +77,12 @@ pre-processing(데이터 전처리)가 완료된 후에, 데이터는 아래와 
   ```
 
 Note: HMDB51 데이터세트도 위와 비슷합니다.  
+
+## Inference  
+
+파일 내 weight와 추론할 영상의 경로를 확인합니다.
+
+추론하기:
+```Shell
+python inference.py
+```

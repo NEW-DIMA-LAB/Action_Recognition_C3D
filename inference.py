@@ -34,9 +34,6 @@ def main():
     model.eval()
 
     # read video
-    video = './0228_test.mov'
-    #video = cv2.read()
-    #cap = cv2.VideoCapture(0)
     cap = cv2.VideoCapture("./test_video/Test_Exam.mp4")
     retaining = True
 

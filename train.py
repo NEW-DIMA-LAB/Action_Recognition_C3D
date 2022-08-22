@@ -26,8 +26,8 @@ nTestInterval = 20 # Run on test set every nTestInterval epochs
 snapshot = 50 # Store a model every snapshot epochs
 lr = 1e-4 # Learning rate
 
-dataset = 'exam' # 시험 부정행위 데이터 셋
-num_classes = 6 # 시험 부정행위 데이터 셋 클래스 개수
+dataset = 'ucf101' # 데이터 셋
+num_classes = 101 # 데이터 셋 클래스 개수
 
 # 학습 파라미터 저장 경로 설정 및 파일 이름 설정
 save_dir_root = os.path.join(os.path.dirname(os.path.abspath(__file__)))

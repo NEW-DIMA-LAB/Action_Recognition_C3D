@@ -127,7 +127,7 @@ class C3D(nn.Module):
 def get_1x_lr_params(model):
     """
     This generator returns all the parameters for conv and two fc layers of the net.
-    이 생성기는 net의 conv 및 2 개의 fc 레이어에 대한 모든 매개 변수를 반환합니다.
+    이 생성기는 net의 conv 및 2 개의 fc 레이어에 대한 모든 매개 변수를 반환
     """
     b = [model.conv1, model.conv2, model.conv3a, model.conv3b, model.conv4a, model.conv4b,
          model.conv5a, model.conv5b, model.fc6, model.fc7]
@@ -149,7 +149,7 @@ def get_10x_lr_params(model):
 
 if __name__ == "__main__":
     inputs = torch.rand(1, 3, 16, 112, 112)
-    net = C3D(num_classes=6, pretrained=True) #총 6개의 label (정상, 책넘기기, 양팔 책상아래, 노트북, 스마트폰, 태블릿)
+    net = C3D(num_classes=101, pretrained=True)
 
     outputs = net.forward(inputs)
     print(outputs.size())
