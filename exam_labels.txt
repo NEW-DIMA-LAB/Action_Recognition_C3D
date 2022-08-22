@@ -1,0 +1,6 @@
+1 FlippingPages
+2 HandDown
+3 Laptop
+4 Normal
+5 Smartphone
+6 Tablet
