@@ -83,7 +83,7 @@ class VideoDataset(Dataset):
         else:
             return True
 
-    def check_preprocess(self): #전처리를 확인하는 부
+    def check_preprocess(self): #전처리를 확인하는 부분
         # TODO: Check image size in output_dir
         if not os.path.exists(self.output_dir):
             return False
@@ -236,7 +236,7 @@ class VideoDataset(Dataset):
 
 if __name__ == "__main__":
     from torch.utils.data import DataLoader
-    train_data = VideoDataset(dataset='exam', split='test', clip_len=8, preprocess=False)
+    train_data = VideoDataset(dataset='ucf101', split='test', clip_len=8, preprocess=False)
     train_loader = DataLoader(train_data, batch_size=100, shuffle=True, num_workers=4)
 
     for i, sample in enumerate(train_loader):
